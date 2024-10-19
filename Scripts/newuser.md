@@ -5,7 +5,6 @@ USER="ansi"
 SSH_KEY_PATH="~/.ssh/id_rsa.pub"  # Path to the public key you want to use
 REMOTE_USER="your_remote_user"     # The user you use to SSH into the remote server
 SERVERS_FILE="servers.txt"         # File containing a list of target servers
-PASSWORD="your_remote_password"    # If all servers have the same password
 
 # Create a temporary bash script to be copied to the remote servers
 cat <<'EOF' > /tmp/create_user.sh
@@ -41,18 +40,18 @@ while IFS= read -r server
 do
   echo "Deploying to $server"
 
-  # Use sshpass to copy the public key and script to the server
-  sshpass -p "$PASSWORD" scp /tmp/create_user.sh "$REMOTE_USER@$server:/tmp/"
-  sshpass -p "$PASSWORD" scp "$SSH_KEY_PATH" "$REMOTE_USER@$server:/tmp/id_rsa.pub"
+  # Copy the create_user.sh script and public key to the remote server
+  scp /tmp/create_user.sh "$REMOTE_USER@$server:/tmp/"
+  scp "$SSH_KEY_PATH" "$REMOTE_USER@$server:/tmp/id_rsa.pub"
 
   # Run the script on the remote server
-  sshpass -p "$PASSWORD" ssh "$REMOTE_USER@$server" 'bash /tmp/create_user.sh'
+  ssh "$REMOTE_USER@$server" 'bash /tmp/create_user.sh'
 
   # Append the public key to the ansi user’s authorized_keys
-  sshpass -p "$PASSWORD" ssh "$REMOTE_USER@$server" 'sudo cat /tmp/id_rsa.pub >> /home/ansi/.ssh/authorized_keys'
+  ssh "$REMOTE_USER@$server" 'sudo cat /tmp/id_rsa.pub >> /home/ansi/.ssh/authorized_keys'
 
   # Clean up the remote server
-  sshpass -p "$PASSWORD" ssh "$REMOTE_USER@$server" 'sudo rm /tmp/create_user.sh /tmp/id_rsa.pub'
+  ssh "$REMOTE_USER@$server" 'sudo rm /tmp/create_user.sh /tmp/id_rsa.pub'
 
 done < "$SERVERS_FILE"
 
