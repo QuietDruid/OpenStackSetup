@@ -38,6 +38,12 @@ Turns out Canonical's [Microstack](https://microstack.run/docs/multi-node) was n
 
 Redownloaded a fresh copy of UbunServer 22.04.5, cleared the drives, and reinstalled on the mini-PCs. The process moved through slowly but seemed to work alright.
 
+### UNTIL IT DIDN'T
+
+Yeah....
+
+Multiple errors, things didn't come back online after a reboot lead to the realization that the gains I would achieve from running Openstack on bare-metal hardware would be moot if it wasn't stable in the exact configuration desired. So what happened was the switch to the virtual cluster.
+
 ## Casualties
 
 Although this project was mildly successful, it was not without its losses. These are the brave computers that gave their machine spirits in the journey for understanding:
