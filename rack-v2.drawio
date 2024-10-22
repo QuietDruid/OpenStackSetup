@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="TmiHvP_9mpX6Wbx9tFY7">
+    <mxGraphModel dx="1634" dy="1145" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7jD_OKgneHu6e8vSApU7-15" value="KEYSTONE JACK PLATE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="176" y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-16" value="C12P-Brocade Switch" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="180" y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-17" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-180" width="360" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-1" value="" style="strokeColor=#666666;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;outlineConnect=0;shadow=0;dashed=0;shape=mxgraph.rackGeneral.rackCabinet3;fillColor2=#f4f4f4;container=0;collapsible=0;childLayout=rack;allowGaps=1;marginLeft=33;marginRight=9;marginTop=21;marginBottom=22;textColor=#666666;numDisp=ascend;" vertex="1" parent="7jD_OKgneHu6e8vSApU7-17">
+          <mxGeometry width="360" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-6" value="" style="strokeColor=#666666;html=1;labelPosition=right;align=left;spacingLeft=15;shadow=0;dashed=0;outlineConnect=0;shape=mxgraph.rack.dell.poweredge_m620;" vertex="1" parent="7jD_OKgneHu6e8vSApU7-17">
+          <mxGeometry x="310.90909090909093" y="186.99999999999997" width="34.36363636363637" height="62.9" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-2" value="" style="strokeColor=#666666;html=1;labelPosition=right;align=left;spacingLeft=15;shadow=0;dashed=0;outlineConnect=0;shape=mxgraph.rack.general.cat5e_rack_mount_patch_panel_24_ports;" vertex="1" parent="7jD_OKgneHu6e8vSApU7-17">
+          <mxGeometry x="30" y="35.7" width="315.27" height="25.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-3" value="" style="html=1;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;shadow=0;dashed=0;shape=mxgraph.rack.hpe_aruba.switches.j9773a_2530_24g_poeplus_switch;" vertex="1" parent="7jD_OKgneHu6e8vSApU7-17">
+          <mxGeometry x="30" y="61.2" width="315.27" height="25.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-4" value="" style="strokeColor=#666666;html=1;labelPosition=right;align=left;spacingLeft=15;shadow=0;dashed=0;outlineConnect=0;shape=mxgraph.rack.dell.dell_poweredge_2u;" vertex="1" parent="7jD_OKgneHu6e8vSApU7-17">
+          <mxGeometry x="30" y="86.7" width="315.27" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-5" value="" style="strokeColor=#666666;html=1;labelPosition=right;align=left;spacingLeft=15;shadow=0;dashed=0;outlineConnect=0;shape=mxgraph.rack.f5.big_ip_2x00;" vertex="1" parent="7jD_OKgneHu6e8vSApU7-17">
+          <mxGeometry x="30" y="137.7" width="315.27" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-8" value="" style="strokeColor=#666666;html=1;labelPosition=right;align=left;spacingLeft=15;shadow=0;dashed=0;outlineConnect=0;shape=mxgraph.rackGeneral.shelf;container=1;collapsible=0" vertex="1" parent="7jD_OKgneHu6e8vSApU7-17">
+          <mxGeometry x="54" y="249.89999999999998" width="291.2727272727273" height="25.499999999999996" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-9" value="" style="shape=mxgraph.rack.apc.apc_smart_ups_1000-3000_va_2u;html=1;labelPosition=right;align=left;spacingLeft=15;dashed=0;shadow=0;fillColor=#ffffff;" vertex="1" parent="7jD_OKgneHu6e8vSApU7-17">
+          <mxGeometry x="30" y="275.4" width="315.27" height="44.6" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-11" value="" style="strokeColor=#666666;html=1;labelPosition=right;align=left;spacingLeft=15;shadow=0;dashed=0;outlineConnect=0;shape=mxgraph.rack.dell.poweredge_m620;" vertex="1" parent="7jD_OKgneHu6e8vSApU7-17">
+          <mxGeometry x="261.81818181818187" y="186.99999999999997" width="34.36363636363637" height="62.9" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-12" value="" style="strokeColor=#666666;html=1;labelPosition=right;align=left;spacingLeft=15;shadow=0;dashed=0;outlineConnect=0;shape=mxgraph.rack.dell.poweredge_m620;" vertex="1" parent="7jD_OKgneHu6e8vSApU7-17">
+          <mxGeometry x="212.72727272727272" y="186.99999999999997" width="34.36363636363637" height="62.9" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-13" value="" style="strokeColor=#666666;html=1;labelPosition=right;align=left;spacingLeft=15;shadow=0;dashed=0;outlineConnect=0;shape=mxgraph.rack.dell.poweredge_m620;" vertex="1" parent="7jD_OKgneHu6e8vSApU7-17">
+          <mxGeometry x="162.8181818181818" y="186.99999999999997" width="34.36363636363637" height="62.9" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-14" value="" style="strokeColor=#666666;html=1;labelPosition=right;align=left;spacingLeft=15;shadow=0;dashed=0;outlineConnect=0;shape=mxgraph.rack.dell.poweredge_m620;" vertex="1" parent="7jD_OKgneHu6e8vSApU7-17">
+          <mxGeometry x="114.54545454545456" y="186.99999999999997" width="34.36363636363637" height="62.9" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-18" value="SuperMicro 2u - Bertha" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="175" y="100" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-19" value="SM 1u - Belle" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="205" y="140" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-20" value="Mini-PCs" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="215" y="210" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7jD_OKgneHu6e8vSApU7-21" value="UPS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="225" y="280" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
