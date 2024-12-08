@@ -13,3 +13,5 @@ General Router : Utilized for my homenetworking : Flash with OpenWRT/Merlin
 Isolating Router : A Microtik router that's been flashed to RouterV7
 
 Brocade/Ruckus POE Switch:
+
+Changed novnc to spice for pasting
