@@ -1,0 +1,35 @@
+#cloud-config
+
+# User creation with sudo access and SSH key
+users:
+  - name: cloudadmin
+    gecos: Cloud Admin User
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    groups: [sudo, adm, systemd-journal]
+    shell: /bin/bash
+    lock_passwd: false
+    passwd: $6$rounds=4096$tqAgdXYclLfS$3cddIJ1Q8zDfStQzjOOoe2QXXZu/KNbuEtKKjSb0lOmqvUSrcvJ4QIw67B3Ru/u8Q5PaSqC59jXH6ZyqnMMmh.
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCktr3UyNUbvIuUnkUZjZGn3fKiKkIgVjUpmR6ksfUX+osZt6c50yTxz6rUpfWnQPAGLsucBUPNacAKK0OzZIuVOmsLM89OTJn+H8mfBvj0WHsh6PabMPOll+9Zjz0IeBfdxgfc8LOrqMgIPJfh8kkxus/E/yUbM0Xd2kSV6L9jCXwj3lBA0cqX96rmi6km6c85w77isujxOj1yB/z988y4wVuHor+oZ7ZPfB+HRwOnGVEur3kgUtU0Pesw0lodzwSzCWO5ixhhywKs7RW0iaqWm6yHztglHruNBPTQBWc4yOe6gEKJ5NKFiWWLRgQhZyZeQSNRGaYdvlwoihiR630DkravkZ7RNnhLFn0tTE1kJLsh+bmBmzBI0ZEQrrz1Y04lj4CoUuJbdmgfi+ojlGF3fq4V6RjXN7VgsbURoOE7hwC+Cpz40aLJVBcUGdZzPM3TePAbHaqOoo8282+6i5IClrMm4P3x8l1IdCkB8+xnUnRyyFEMcQbMInEQ1WU79ksrHNXGKrS25bpCn2M2n5pRCV5kGEkE3q54cbrZHKG76bt1Ynfx6o/IRWcjWfRyiuqQ1w6RLz+BlQLfNIZxIjiH7RLKKe6zOmUbWNslz4+Efr/r9WBY2xN+c8qIYi+m7tVv7q5LHOHVrhgXZYpA4Anrn+GNcE8Zz0nXyt6q+9RTLw== openstack
+# Disable password authentication for enhanced security
+ssh_pwauth: false
+
+# Ensure system is updated on first boot
+package_upgrade: true
+
+# Additional system packages
+packages:
+  - vim
+  - tmux
+  - curl
+
+# Additional SSH hardening (optional)
+ssh_config:
+  - disable_root_login: true
+  - allow_users:
+    - cloudadmin
+
+# Ensure proper SSH permissions
+runcmd:
+  - [ chmod, 700, /home/cloudadmin/.ssh ]
+  - [ chmod, 600, /home/cloudadmin/.ssh/authorized_keys ]
