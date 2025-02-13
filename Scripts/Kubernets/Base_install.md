@@ -1,7 +1,17 @@
-# 
+# Basic VM Stuff
+
+sudo apt-get update
+sudo apt-get upgrade -y
+
+sudo apt-get install qemu-guest-agent -y 
+sudo apt-get install net-tools -y 
+sudo systemctl start qemu-guest-agent
+sudo systemctl enable qemu-guest-agent
+
+
 # Disable swap
 sudo swapoff -a
-sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+sudo sed -i '/swap/s/^/# /' /etc/fstab
 
 # Load kernel modules
 cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
