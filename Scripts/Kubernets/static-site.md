@@ -35,3 +35,4 @@ spec:
     targetPort: 80
   selector:
     app: static-site
+  type: ClusterIP
